@@ -48,6 +48,9 @@ Follow up: Can you come up with an algorithm that runs in `O(m + n)` time?
 
 ## Solution
 
+- Time complexity: `O(m + n)`
+- Space complexity: `O(1)`
+
 ### Train of Thought
 
 We know that `nums1` has padded placeholder zeros on the right. So we can start with the largest numbers from two arrays and work our way down to find the larger number to fill in the positions in `nums1`. This way, we do not need to use additional storage.
