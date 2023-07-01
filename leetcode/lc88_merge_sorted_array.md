@@ -85,3 +85,36 @@ class Solution:
             nums2_ptr -= 1
             cur_ptr -= 1
 ```
+
+### C++
+
+```c++
+class Solution {
+public:
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+        int nums1_ptr = size(nums1) - 1 - size(nums2);
+        int nums2_ptr = size(nums2) - 1;
+        int cur_ptr = size(nums1) - 1;
+
+        while (nums1_ptr >= 0 && nums2_ptr >= 0) {
+            if (nums2[nums2_ptr] >= nums1[nums1_ptr]) {
+                nums1[cur_ptr] = nums2[nums2_ptr];
+                nums2_ptr -= 1;
+            }
+
+            else {
+                nums1[cur_ptr] = nums1[nums1_ptr];
+                nums1_ptr -= 1;
+            }
+
+            cur_ptr -= 1;
+        }
+
+        while (nums2_ptr >= 0) {
+            nums1[cur_ptr] = nums2[nums2_ptr];
+            nums2_ptr -= 1;
+            cur_ptr -= 1;
+        }
+    }
+};
+```

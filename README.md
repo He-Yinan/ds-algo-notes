@@ -8,4 +8,4 @@
 
 | Q Num | Question | Difficulty | Language | Type |
 | ----- | -------- | ---------- | -------- | ---- |
-| 88 | [Merge Sorted Array](leetcode/lc88_merge_sorted_array.md) | Easy | Python | Array, Two Pointers, Sorting |
+| 88 | [Merge Sorted Array](leetcode/lc88_merge_sorted_array.md) | Easy | Python, C++ | Array, Two Pointers, Sorting |
